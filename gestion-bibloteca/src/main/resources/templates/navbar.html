@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Navbar</title>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" th:fragment="navbar">
+        <div class="container">
+            <a class="navbar-brand" th:href="@{/}"><i class='fas fa-home' style='font-size:30px'></i></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/tablaAutores}">Autores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/tablaGeneros}">Generos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/tablaLibros}">Libros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/tablaUsuarios}">Usuarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/tablaEmpleados}">Empleados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/tablaPrestamos}">Prestamos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
